@@ -7,13 +7,13 @@ const target = "1 Jan 2021";
 function countdown() {
     const targetDate = new Date(target);
     const currentDate = new Date();
-    const totalseconds = (targetDate- currentDate) / 1000;
+    const totalseconds = (targetDate - currentDate) / 1000;
 
 
-    const days = Math.floor((totalseconds/3600/24))
-    const hours = Math.floor((totalseconds / 3600/60)% 24)
-    const minutes = Math.floor((totalseconds / 3600/60)% 60)
-    const seconds = Math.floor((totalseconds )% 60)
+    const days = Math.floor((totalseconds / 3600 / 24))
+    const hours = Math.floor((totalseconds / 3600 ) % 24)
+    const minutes = Math.floor((totalseconds / 3600 / 60) % 60)
+    const seconds = Math.floor((totalseconds) % 60)
 
 
     daysEl.innerHTML = timeFormater(days)
@@ -24,7 +24,7 @@ function countdown() {
 
 }
 countdown()
-function timeFormater (time) {
+function timeFormater(time) {
     return time < 10 ? `0${time}` : `${time}`
 }
-setInterval(countdown,1)
+setInterval(countdown, 1000)
