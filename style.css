@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    display: flex; 
+    flex-direction: column;
+     justify-content: center;
+}
+
+.style-container {
+    max-width: 1140px;
+    margin: auto;
+    /* height: auto; */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    margin: 32px 4px;
+    font-style: lighter;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+    margin: auto;
+    min-width: 105px;
+    /* max-height: 452px; */
+}
+
+.container-element {
+    width: 208px;
+    margin: 16px auto;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0;
+
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
